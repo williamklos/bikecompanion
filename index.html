@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ride Along</title>
+    <script src="/static/plotly-2.12.1.min.js"></script>
+    <style>
+        body {background-color: lightblue;}
+        h1 {text-align: center;}  
+
+        
+        
+        </style>
+</head>
+<body>
+    <H1>The Ride Along</H1>
+    <div id="heartbeat", class="center"> </div>
+    <br>
+    <p id="p">Average Heart Rate: </p>
+    <br><br>
+    <div id="chart", class = "center"></div>
+    <br>
+    <p id="p1">Total Distance: </p>
+    <p id="p2">Average Speed: </p>
+    <p id="p3">Calories Burned: </p>
+    <p id="p4">Temperature: </p>
+    <script src = /static/graph.js></script>
+    <button type="button", onclick="startPlotting()">Start Trip</button>
+    <button type="button", onclick="stopPlotting()">Stop Trip</button>
+    <br> <br>
+    <input id="radius", placeholder = "Enter wheel radius (cm)">
+    <br>
+    <button type="button", onclick="setRadius()">Set Radius</button>
+    <br><br>
+    <input id="mass", placeholder = "Enter your mass (kg)">
+    <br>
+    <button type="button", onclick="setMass()">Set Mass</button>
+    <pre id="json"></pre>
+
+
+</body>
+</html>
